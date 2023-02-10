@@ -1,0 +1,162 @@
+/*Généralités*/
+* {
+    font-family: 'Noto Sans Mono', monospace;
+    color: #3A3F55;
+    font-size: 18px;
+    text-align: center;
+}
+
+body {
+    margin-bottom: 4rem;
+    background-color: #F9CDC8;
+}
+
+/*Entête*/
+#header p {
+    font-family: 'Gaegu', sans-serif;
+    font-size: 90px;
+    margin: 0px;
+}
+
+#header {
+    margin-bottom: 4rem;
+}
+
+/*intro*/
+#intro p {
+    margin: 1rem 20rem;
+}
+
+/*Photos*/
+#photos {
+    margin: 5rem 3rem;
+    padding: 0;
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.photo {
+    object-fit: cover;
+    padding: 0;
+    margin: 2rem 1.5rem;
+    position: relative;
+}
+
+.caption {
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 25%;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    background-color: #3A3F5580;
+    color: #F3F2F8;
+    border-radius: 2rem;
+    display: none;
+}
+  
+.image {
+    border-radius: 2rem;
+}
+
+.image:hover {
+    transform: scale(1.8);
+}
+
+.big:hover {
+    transform: scale(1.4);
+}
+  
+.image:hover + .caption {
+    display: block;
+}
+
+/*Petit message d'amour*/
+#texte {
+    margin: 4rem 10rem;
+    line-height: 40px;
+}
+
+#texte p {
+    text-align: justify;
+}
+
+/*Formulaire de continuité du couple*/
+.choix {
+    padding: 0;
+    margin: 0;
+    clear: both;
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem 25rem;
+}
+  
+.choix div {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px;
+    float: left;
+}
+  
+input[type="radio"]:not(:checked), 
+input[type="radio"]:checked {
+    position: absolute;
+    left: -9999%;
+}
+  
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #F3F2F8;
+    margin: 2rem 0rem;
+    border-radius: 1rem;
+    font-family: 'Gaegu', sans-serif;
+    font-size: 22px;
+}
+
+input[type="radio"]:hover + label {
+    transform: scale(1.1);
+}
+  
+input[type="radio"]:checked + label {
+    color: #F3F2F8;
+    background-color: #DD6971;
+}
+
+button {
+    margin: 2rem;
+    padding: 1rem 2rem;
+    border: 0;
+    background-color: #3A3F55;
+    color: #F3F2F8;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/*Pop Ups*/
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border: 1rem solid #F9CDC8;
+    background-color: #F3F2F8;
+    border-radius: 2rem;
+    padding: 5rem 8rem;
+    z-index: 9;
+    box-shadow: 0px 0px 10px 9px #DD6971;
+    font-size: 25px;
+}

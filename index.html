@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veux-tu être mon valentin?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <script src="script.js"></script>
+    <!--Entête-->
+    <div id="header">
+        <p class="for">Pour : Phasme Philistin</p>
+        <p class="from">De : Lombric Largue</p>
+    </div>
+
+    <!--Intro-->
+    <div id="intro">
+        <p>On se le dit beaucoup, mais pas trop: je t'aime!</p>
+        <p>J'aime passer du temps avec toi, et en ce jour fatidique de Saint-Valentin, je ne peux que prendre l'occasion de souligner l'amour que je te porte.</p>
+    </div>
+
+    <!--Photos souvenirs-->
+    <div id="photos">
+        <div class="photo">
+            <img class="image" src="images/bumble.PNG" height="250"/>
+            <div class="caption">How it started...</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/bus.JPG" height="250"/>
+            <div class="caption">Petit voyage en transport en commun</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/cale.JPG" height="250"/>
+            <div class="caption">Summum de la cuteness</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/chambre.JPG" height="250"/>
+            <div class="caption">Adorables</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/pref.JPG" height="250"/>
+            <div class="caption">Ma photo pref!</div>
+        </div>
+
+        <div class="photo">
+            <img class="image big" src="images/dodo.JPG" height="250"/>
+            <div class="caption">Les meilleurs dodos se passent là</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/gareparc.jpeg" height="250"/>
+            <div class="caption">À la gare parc</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/hunter.JPG" height="250"/>
+            <div class="caption">Hunter X Hunter</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/mignoncommetout.JPG" height="250"/>
+            <div class="caption">J'aime cette photo là :))</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/pieds.JPG" height="250"/>
+            <div class="caption">Triggering my foot fetish</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/cute.jpeg" height="250"/>
+            <div class="caption">Petits messages mignons</div>
+        </div>
+
+        <div class="photo">
+            <img class="image" src="images/quebec.JPG" height="250"/>
+            <div class="caption">Un bon calin</div>
+        </div>
+    </div>
+
+    <!--Petit message d'amour-->
+    <div id="texte">
+        <p>Merci de faire partie de ma vie au quotidien, merci d'être là pour moi, merci de m'écouter et de me supporter, merci de me faire rire, merci de me réchauffer le cœur; bref, merci de m'aimer. C'est seulement une petite carte de Saint-Valentin pour te dire que je t'aime, mais j'espère que ça te fera plaisir. J'ai hâte de pouvoir mieux prendre soin de toi. Plein d'amour, de câlins et de becs!</p>
+    </div>
+
+    <!--Formulaire de continuité du couple-->
+    <form id="valentin" name="stvalentin" onsubmit="return false">
+        <div class="question">Bref, veux-tu être mon valentin?</div>
+
+        <div class="choix">
+            <div>
+                <input type="radio" id="oui" name="valentin" value="oui" onclick="popUpAmoureux()" autocomplete="off" required>
+                <label for="oui">oui</label>
+            </div>
+            <div>
+                <input type="radio" id="non" name="valentin" value="non" onclick="popUpEx()" autocomplete="off">
+                <label for="non">non</label>
+            </div>
+            <div>
+                <input type="radio" id="pt" name="valentin" value="pt" onclick="popUpFreq()" autocomplete="off">
+                <label for="pt">peut-etre</label>
+            </div>
+        </div>
+
+        <button class="submit">soumettre</button>
+    </form>
+
+    <!--Pop Up-->
+    <div id="result">
+        <div class="popup amoureux">
+            YAY! Bonne St-Valentin! Je t'aime et j'ai full hâte de te voir!
+        </div>
+
+        <div class="popup ex">
+            NOT DEFINED
+        </div>
+
+        <div class="popup freq">
+            NOT DEFINED
+        </div>
+    </div>
+</body>
+</html>
